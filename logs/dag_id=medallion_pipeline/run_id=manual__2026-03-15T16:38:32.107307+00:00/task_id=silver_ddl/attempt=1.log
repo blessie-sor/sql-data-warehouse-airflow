@@ -1,0 +1,27 @@
+{"timestamp":"2026-03-15T16:38:37.787078Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 195. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-15T16:38:37.911533Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-15T16:38:37.911798Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/medallion_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-15T16:38:37.915167Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/medallion_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-15T16:38:37.922878Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.923883Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.923968Z","level":"info","event":"Current task name:silver_ddl","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.924012Z","level":"info","event":"Dag name:medallion_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.924054Z","level":"info","event":"Running: /opt/airflow/scripts/silver/ddl_silver.sql","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940377Z","level":"info","event":"DROP TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940467Z","level":"info","event":"CREATE TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940520Z","level":"info","event":"DROP TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940554Z","level":"info","event":"CREATE TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940586Z","level":"info","event":"DROP TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940617Z","level":"info","event":"CREATE TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940675Z","level":"info","event":"DROP TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940711Z","level":"info","event":"CREATE TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940752Z","level":"info","event":"DROP TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940788Z","level":"info","event":"CREATE TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940823Z","level":"info","event":"DROP TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940859Z","level":"info","event":"CREATE TABLE","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940890Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940924Z","level":"info","event":"Done: /opt/airflow/scripts/silver/ddl_silver.sql","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.940614Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-15T16:38:37.946087Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.946166Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:38:37.946317Z","level":"info","event":"Task operator:<Task(PythonOperator): silver_ddl>","logger":"task.stdout"}

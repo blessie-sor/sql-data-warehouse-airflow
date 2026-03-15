@@ -1,0 +1,21 @@
+{"timestamp":"2026-03-15T16:32:03.593359Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 91. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-15T16:32:03.710000Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-15T16:32:03.710219Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/medallion_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-15T16:32:03.713875Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/medallion_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-15T16:32:03.721892Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.723032Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.723119Z","level":"info","event":"Current task name:load_bronze","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.723188Z","level":"info","event":"Dag name:medallion_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.723235Z","level":"info","event":"Running: /opt/airflow/scripts/bronze/proc_load_bronze.SQL","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797306Z","level":"info","event":"CREATE FUNCTION","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797757Z","level":"info","event":" load_bronze","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797801Z","level":"info","event":"-------------","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797834Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797865Z","level":"info","event":"(1 row)","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797895Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797925Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797954Z","level":"info","event":"Done: /opt/airflow/scripts/bronze/proc_load_bronze.SQL","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.797529Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-15T16:32:03.803793Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.803875Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:32:03.803987Z","level":"info","event":"Task operator:<Task(PythonOperator): load_bronze>","logger":"task.stdout"}

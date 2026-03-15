@@ -1,0 +1,34 @@
+{"timestamp":"2026-03-15T16:15:55.099144Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 408. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-15T16:15:55.240641Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-15T16:15:55.240927Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/medallion_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-15T16:15:55.244835Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/medallion_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-15T16:15:55.252688Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.252770Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.252839Z","level":"info","event":"Current task name:bronze_ddl","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.252891Z","level":"info","event":"Dag name:medallion_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.253611Z","level":"info","event":"Running: /opt/airflow/scripts/bronze/ddl_bronze.SQL","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.255231Z","level":"info","event":"Executing: /*","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.255295Z","level":"info","event":"DDL Script: Create Bronze Tables","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.255336Z","level":"info","event":"  This script ...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.255392Z","level":"info","event":"Executing: CREATE TABLE bronze.crm_cust_info (","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.255430Z","level":"info","event":"    cst_id INT...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.256553Z","level":"info","event":"Executing: DROP TABLE IF EXISTS bronze.crm_prd_info...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.256653Z","level":"info","event":"Executing: CREATE TABLE bronze.crm_prd_info (","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.256735Z","level":"info","event":"    prd_id INT,...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257005Z","level":"info","event":"Executing: DROP TABLE IF EXISTS bronze.crm_sales_details...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257063Z","level":"info","event":"Executing: CREATE TABLE bronze.crm_sales_details (","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257110Z","level":"info","event":"    sls_or...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257292Z","level":"info","event":"Executing: DROP TABLE IF EXISTS bronze.erp_cust_az12...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257365Z","level":"info","event":"Executing: CREATE TABLE bronze.erp_cust_az12 (","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257417Z","level":"info","event":"    cid VARCHA...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257710Z","level":"info","event":"Executing: DROP TABLE IF EXISTS bronze.erp_loc_a101...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257770Z","level":"info","event":"Executing: CREATE TABLE bronze.erp_loc_a101 (","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.257819Z","level":"info","event":"    cid VARCHAR...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.258038Z","level":"info","event":"Executing: DROP TABLE IF EXISTS bronze.erp_px_cat_g1v2...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.258138Z","level":"info","event":"Executing: CREATE TABLE bronze.erp_px_cat_g1v2 (","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.258226Z","level":"info","event":"    id VARCH...","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.258381Z","level":"info","event":"Done: /opt/airflow/scripts/bronze/ddl_bronze.SQL","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.258630Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-15T16:15:55.264108Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.264171Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:15:55.264249Z","level":"info","event":"Task operator:<Task(PythonOperator): bronze_ddl>","logger":"task.stdout"}

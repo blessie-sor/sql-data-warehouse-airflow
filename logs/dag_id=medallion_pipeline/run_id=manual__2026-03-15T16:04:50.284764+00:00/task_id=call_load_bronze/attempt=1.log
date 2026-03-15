@@ -1,0 +1,14 @@
+{"timestamp":"2026-03-15T16:11:03.905305Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 323. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-15T16:11:04.235604Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-15T16:11:04.236077Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/medallion_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-15T16:11:04.241872Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/medallion_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-15T16:11:04.267933Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.268087Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.268655Z","level":"info","event":"Current task name:call_load_bronze","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.268753Z","level":"info","event":"Dag name:medallion_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.269417Z","level":"info","event":"Running: /opt/airflow/scripts/bronze/proc_load_bronze.SQL","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.274589Z","level":"info","event":"Done: /opt/airflow/scripts/bronze/proc_load_bronze.SQL","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.274956Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-15T16:11:04.291682Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.291768Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-15T16:11:04.291841Z","level":"info","event":"Task operator:<Task(PythonOperator): call_load_bronze>","logger":"task.stdout"}
